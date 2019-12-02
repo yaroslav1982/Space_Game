@@ -5,7 +5,7 @@ const SPIN = new function () {
     let $ = (id) => {return document.getElementById(id)};
 
     let rect = (x, y, w, h, clr) => {
-        ctx.fillStyle clr;
+        ctx.fillStyle = clr;
         ctx.fillRect();
     };
 
