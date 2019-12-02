@@ -4,8 +4,9 @@ const SPIN = new function () {
 
     let $ = (id) => {return document.getElementById(id)};
 
-    let rect = (x, y, w, h, crl) => {
-
+    let rect = (x, y, w, h, clr) => {
+        ctx.fillStyle clr;
+        ctx.fillRect();
     };
 
     class Node {
@@ -24,7 +25,7 @@ const SPIN = new function () {
         }
 
         draw () {
-
+            rect(this.x, this.y, this.w, this.h, '#fff');
         }
 
         destory () {
@@ -55,6 +56,7 @@ const SPIN = new function () {
         height = H;
         cnv.width = width;
         cnv.height = height;
+        SPIN.update();
     };
 };
 
