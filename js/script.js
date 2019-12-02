@@ -1,6 +1,6 @@
 const SPIN = new function () {
     let SPIN = this,
-        cnv, ctx, width, height;
+        cnv, ctx, width, height, nodes;
 
     let $ = (id) => {return document.getElementById(id)};
 
