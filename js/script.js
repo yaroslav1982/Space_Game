@@ -4,8 +4,16 @@ const SPIN = new function () {
 
     let $ = (id) => (document.getElementById(id));
 
-    SpIN.start = (W, H) => {
 
+
+
+    SpIN.start = (W, H) => {
+        cnv = $('cnv')
+        ctx = cnv.getContext('2d');
+        width = W;
+        height = H;
+        cnv.width = width;
+        cnv.height = height;
     };
 };
 
