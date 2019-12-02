@@ -15,4 +15,14 @@ body {
     padding: 5px;
     background: #2d2d2d;
     color: white;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#game #title {
+    padding-bottom: 10px;
+    font-family: Troika;
+    font-size: 50px;
+    color: #5889a8;
+    text-shadow: 0 0 5px #0061b0;
 }
