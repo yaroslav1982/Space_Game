@@ -6,7 +6,7 @@ const SPIN = new function () {
 
     let rect = (x, y, w, h, clr) => {
         ctx.fillStyle = clr;
-        ctx.fillRect();
+        ctx.fillRect(x, y, w, h);
     };
 
     class Node {
@@ -24,7 +24,7 @@ const SPIN = new function () {
         }
 
         draw () {
-            rect(this.x, this.y, this.w, this.h, '#fffffff');
+            rect(this.x, this.y, this.w, this.h, '#ffffff');
         }
 
         destory () {
