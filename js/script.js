@@ -1,6 +1,7 @@
 const SPIN = new function () {
     let SPIN = this,
-        cnv, ctx, width, height, nodes = [], node_count = 0, for_destory = {};
+        cnv, ctx, width, height, nodes = [], node_count = 0, for_destory = {},
+        down_keys = {};
 
     let $ = (id) => {return document.getElementById(id)};
 
@@ -53,6 +54,9 @@ const SPIN = new function () {
         requestAnimationFrame(SPIN.update);
     };
 
+    SPIN.key = (key) => {
+        return down_keys[key];
+    };
 
     SPIN.start = (W, H) => {
         cnv = $('cnv')
@@ -62,6 +66,9 @@ const SPIN = new function () {
         cnv.width = width;
         cnv.height = height;
         SPIN.update();
+        window.addEventListener('keydown', (e) => {
+            console.log(e);
+        });
     };
 };
 
@@ -82,7 +89,7 @@ window.addEventListener('load', function () {
         this.console.log('FIRE!');
     };
 
-    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#00a7FF', (node) => {
+    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#ffffff', (node) => {
         if (SPIN.key('A'))
             node.x -= 1;
         if (SPIN.key('D'))
