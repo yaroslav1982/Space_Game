@@ -4,8 +4,9 @@ const SPIN = new function () {
 
     let $ = (id) => {return document.getElementById(id)};
 
-    class Nade {
-        constructor (x, y) {
+    class Node {
+        constructor (x, y, w, h) {
+            this.id = node_cont++;
             nodes.push(this);
         }
 
