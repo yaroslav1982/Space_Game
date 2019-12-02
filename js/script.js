@@ -23,6 +23,10 @@ const SPIN = new function () {
 
         }
 
+        _update () {
+            this.update();
+        }
+
         draw () {
             rect(this.x, this.y, this.w, this.h, '#ffffff');
         }
