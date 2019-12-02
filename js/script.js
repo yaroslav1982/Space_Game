@@ -1,6 +1,6 @@
 const SPIN = new function () {
     let SPIN = this,
-        cnv, ctx, width, height, nodes = [];
+        cnv, ctx, width, height, nodes = [], for_destory = {};
 
     let $ = (id) => {return document.getElementById(id)};
 
