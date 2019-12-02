@@ -18,7 +18,11 @@ const SPIN = new function () {
         }
 
         destory () {
-            
+
+        }
+
+        move (x, y) {
+
         }
     }
 
