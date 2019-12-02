@@ -82,6 +82,10 @@ window.addEventListener('load', function () {
         node.y += 0.1;
     }
 
+    let bullet_ai = (node) => {
+        node.y -= 2;
+    }
+
     for (let j = 0; j < 3; j++) {
         for (let i = 1; i <= 10; i++) {
             SPIN.create_node(-30 + (20 + 40) * i, 20 + (20 + 40) * j, 40, 40, '#ff6d5a', enemy_ai);
@@ -89,15 +93,15 @@ window.addEventListener('load', function () {
     }
 
     let fire = (x, y) => {
-        this.console.log('FIRE!');
+        SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
     };
 
-    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#ffffff', (node) => {
+    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
         if (SPIN.key('KeyA'))
             node.x -= 1;
         if (SPIN.key('KeyD'))
             node.x += 1;
         if (SPIN.key('Space'))
-            fire(node.x, node.y);
+            fire(node.x + 25 - 5, node.y);
     });
 });
