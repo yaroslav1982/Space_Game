@@ -18,7 +18,7 @@ const SPIN = new function () {
         }
 
         destory () {
-
+            for_destory[this.id] = this;
         }
 
         move (x, y) {
