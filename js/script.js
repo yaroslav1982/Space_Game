@@ -101,7 +101,9 @@ window.addEventListener('load', function () {
     }
 
     let fire = (x, y) => {
-        SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
+        if (SPIN.get_timer() > 500) {
+            SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
+        }
     };
 
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
