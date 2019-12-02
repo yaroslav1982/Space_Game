@@ -73,7 +73,7 @@ window.addEventListener('load', function () {
     }
 
     for (let i = 1; i <= 10; i++) {
-        SPIN.create_node(10*i, 10, 15, 15, '#ff6d5a', enemy_ai);
+        SPIN.create_node(-30 + (20 + 40) * i, 10, 40, 40, '#ff6d5a', enemy_ai);
     }
 
 });
