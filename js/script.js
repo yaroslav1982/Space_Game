@@ -1,7 +1,7 @@
 const SPIN = new function () {
     let SPIN = this,
         cnv, ctx, width, height, nodes = [], node_count = 0, for_destory = {},
-        down_keys = {};
+        down_keys = {}, timer = 0;
 
     let $ = (id) => {return document.getElementById(id)};
 
@@ -91,7 +91,7 @@ window.addEventListener('load', function () {
     }
 
     let bullet_ai = (node) => {
-        node.y -= 2;
+        node.y -= 5;
     }
 
     for (let j = 0; j < 3; j++) {
@@ -101,7 +101,10 @@ window.addEventListener('load', function () {
     }
 
     let fire = (x, y) => {
+        if (SPIN.get_timer() > 10) {
             SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
+            SPIN.clear_timer();
+        }
     };
 
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
