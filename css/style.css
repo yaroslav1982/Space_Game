@@ -26,3 +26,9 @@ body {
     color: #5889a8;
     text-shadow: 0 0 5px #0061b0;
 }
+
+#cnv {
+    border-radius: 15px;
+    background: #1a272f;
+    box-shadow: 0 0 5px #00a7FF;
+}
