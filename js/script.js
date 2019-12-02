@@ -26,6 +26,10 @@ const SPIN = new function () {
         }
     }
 
+    SPIN.create_node = (x, y) => {
+        return new Node(x, y);
+    };
+
 
     SPIN.start = (W, H) => {
         cnv = $('cnv')
