@@ -17,15 +17,13 @@ const SPIN = new function () {
             this.w = w;
             this.h = h;
             this.clr = clr;
+            this.update = upd;
             nodes.push(this);
         }
 
-        update () {
-
-        }
-
         _update () {
-            this.update();
+            if (this.update)
+                this.update(this);
         }
 
         draw () {
@@ -42,8 +40,8 @@ const SPIN = new function () {
         }
     }
 
-    SPIN.create_node = (x, y, w, h) => {
-        return new Node(x, y, w, h);
+    SPIN.create_node = (x, y, w, h, clr, upd) => {
+        return new Node(x, y, w, h, clr, upd);
     };
 
     SPIN.update = () => {
@@ -68,5 +66,7 @@ const SPIN = new function () {
 
 window.addEventListener('load', function () {
     SPIN.start(640, 480);
-    SPIN.create_node(10, 10, 15, 15, '#ff6d5a');
+    SPIN.create_node(10, 10, 15, 15, '#ff6d5a', (node) => {
+        node.x += 1;
+    });
 });
