@@ -46,7 +46,8 @@ const SPIN = new function () {
             nodes[i].update();
             nodes[i].draw();
         }
-    }
+        requestAnimationFrame(SPIN.update);
+    };
 
 
     SPIN.start = (W, H) => {
