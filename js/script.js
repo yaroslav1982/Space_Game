@@ -4,6 +4,10 @@ const SPIN = new function () {
 
     let $ = (id) => {return document.getElementById(id)};
 
+    let rect = (x, y, w, h, crl) => {
+
+    };
+
     class Node {
         constructor (x, y, w, h) {
             this.id = node_cont++;
