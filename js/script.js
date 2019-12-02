@@ -6,6 +6,14 @@ const SPIN = new function () {
 
     class Nade {
         constructor (x, y) {
+
+        }
+
+        update () {
+
+        }
+
+        draw () {
             
         }
     }
