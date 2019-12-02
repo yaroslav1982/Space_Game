@@ -5,6 +5,10 @@
     display: inline-block;
 }
 
+body {
+    text-align: center;
+}
+
 #game {
     padding: 5px;
     background: #2d2d2d;
