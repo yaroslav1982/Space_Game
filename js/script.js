@@ -10,7 +10,7 @@ const SPIN = new function () {
     };
 
     class Node {
-        constructor (x, y, w, h) {
+        constructor (x, y, w, h, clr, upd) {
             this.id = node_count++;
             this.x = x;
             this.y = y;
