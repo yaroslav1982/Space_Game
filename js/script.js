@@ -67,7 +67,13 @@ const SPIN = new function () {
 
 window.addEventListener('load', function () {
     SPIN.start(640, 480);
-    SPIN.create_node(10, 10, 15, 15, '#ff6d5a', (node) => {
-        node.x += 1;
-    });
+
+    let enemy_ai = (node) => {
+        //node.x += 1;
+    }
+
+    for (let i = 1; i <= 10; i++) {
+        SPIN.create_node(10*i, 10, 15, 15, '#ff6d5a', enemy_ai);
+    }
+
 });
