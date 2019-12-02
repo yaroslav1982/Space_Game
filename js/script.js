@@ -60,6 +60,10 @@ const SPIN = new function () {
 
     SPIN.clear_timer = () => {
         timer = 0;
+    };
+
+    SPIN.get_timer = () => {
+        return timer;
     }
 
     SPIN.start = (W, H) => {
