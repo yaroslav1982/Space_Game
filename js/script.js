@@ -62,7 +62,9 @@ const SPIN = new function () {
         timer = 0;
     };
 
-    
+    SPIN.get_timer = () => {
+        return timer;
+    };
 
     SPIN.start = (W, H) => {
         cnv = $('cnv')
