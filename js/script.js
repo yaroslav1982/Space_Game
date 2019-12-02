@@ -78,7 +78,16 @@ window.addEventListener('load', function () {
         }
     }
 
+    let fire = (x, y) => {
+        this.console.log('FIRE!');
+    };
+
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#00a7FF', (node) => {
-        
+        if (SPIN.key('A'))
+            node.x -= 1;
+        if (SPIN.key('D'))
+            node.x += 1;
+        if (SPIN.key('SPASE'))
+            fire(node.x, node.y);
     });
 });
