@@ -2,7 +2,7 @@ const SPIN = new function () {
     let SPIN = this,
         cnv, ctx, width, height;
 
-    let $ = (id) => (document.getElementById(id));
+    let $ = (id) => {return document.getElementById(id)};
 
 
 
