@@ -1,6 +1,6 @@
 const SPIN = new function () {
     let SPIN = this,
-        cnv, ctx, width, height, nodes = [], for_destory = {};
+        cnv, ctx, width, height, nodes = [], node_count = 0, for_destory = {};
 
     let $ = (id) => {return document.getElementById(id)};
 
@@ -11,12 +11,11 @@ const SPIN = new function () {
 
     class Node {
         constructor (x, y, w, h) {
-            this.id = node_cont++;
+            this.id = node_count++;
             this.x = x;
             this.y = y;
             this.w = w;
             this.h = h;
-
             nodes.push(this);
         }
 
@@ -25,7 +24,7 @@ const SPIN = new function () {
         }
 
         draw () {
-            rect(this.x, this.y, this.w, this.h, '#fff');
+            rect(this.x, this.y, this.w, this.h, '#fffffff');
         }
 
         destory () {
@@ -63,4 +62,5 @@ const SPIN = new function () {
 
 window.addEventListener('load', function () {
     SPIN.start(640, 480);
+    SPIN.create_node(10, 10, 15, 15);
 });
