@@ -26,8 +26,8 @@ const SPIN = new function () {
         }
     }
 
-    SPIN.create_node = (x, y) => {
-        return new Node(x, y);
+    SPIN.create_node = (x, y, w, h) => {
+        return new Node(x, y, w, h);
     };
 
 
