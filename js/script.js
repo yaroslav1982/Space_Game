@@ -4,7 +4,11 @@ const SPIN = new function () {
 
     let $ = (id) => {return document.getElementById(id)};
 
-
+    class Nade {
+        constructor (x, y) {
+            
+        }
+    }
 
 
     SPIN.start = (W, H) => {
