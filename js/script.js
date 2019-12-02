@@ -32,7 +32,8 @@ const SPIN = new function () {
         }
 
         move (x, y) {
-
+            this.x += x;
+            this.y += y;
         }
     }
 
