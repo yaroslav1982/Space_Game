@@ -27,7 +27,7 @@ const SPIN = new function () {
         }
 
         draw () {
-            rect(this.x, this.y, this.w, this.h, '#ffffff');
+            rect(this.x, this.y, this.w, this.h, '#ff6d5a');
         }
 
         destory () {
@@ -45,6 +45,7 @@ const SPIN = new function () {
     };
 
     SPIN.update = () => {
+        ctx.clearRect(0, 0, width, height);
         for (let i = 0, len = nodes.length; i < len; i++) {
             nodes[i]._update();
             nodes[i].draw();
