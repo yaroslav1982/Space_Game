@@ -14,6 +14,10 @@ const SPIN = new function () {
         }
 
         draw () {
+
+        }
+
+        destory () {
             
         }
     }
