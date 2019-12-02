@@ -58,15 +58,6 @@ const SPIN = new function () {
         return down_keys[key];
     };
 
-    SPIN.delet_timer = () => {
-        timer = 0;
-    };
-
-    SPIN.start_timer = () => {
-        return timer;
-    };
-
-
     SPIN.start = (W, H) => {
         cnv = $('cnv')
         ctx = cnv.getContext('2d');
@@ -102,10 +93,7 @@ window.addEventListener('load', function () {
     }
 
     let fire = (x, y) => {
-        if (SPIN.start_timer() > 10) {
             SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
-            SPIN.delet_timer();
-        }
     };
 
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
