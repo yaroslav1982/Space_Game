@@ -28,7 +28,7 @@ const SPIN = new function () {
         }
 
         draw () {
-            rect(this.x, this.y, this.w, this.h, '#ff6d5a');
+            rect(this.x, this.y, this.w, this.h, this.clr);
         }
 
         destory () {
