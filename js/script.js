@@ -47,7 +47,7 @@ const SPIN = new function () {
 
     SPIN.update = () => {
         for (let i = 0, len = nodes.length; i < len; i++) {
-            nodes[i].update();
+            nodes[i]._update();
             nodes[i].draw();
         }
         requestAnimationFrame(SPIN.update);
