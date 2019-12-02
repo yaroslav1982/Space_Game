@@ -16,6 +16,7 @@ const SPIN = new function () {
             this.y = y;
             this.w = w;
             this.h = h;
+            this.clr = clr;
             nodes.push(this);
         }
 
@@ -67,5 +68,5 @@ const SPIN = new function () {
 
 window.addEventListener('load', function () {
     SPIN.start(640, 480);
-    SPIN.create_node(10, 10, 15, 15);
+    SPIN.create_node(10, 10, 15, 15, '#ff6d5a');
 });
