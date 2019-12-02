@@ -11,7 +11,7 @@ const SPIN = new function () {
             this.y = y;
             this.w = w;
             this.h = h;
-            
+
             nodes.push(this);
         }
 
@@ -35,6 +35,10 @@ const SPIN = new function () {
     SPIN.create_node = (x, y, w, h) => {
         return new Node(x, y, w, h);
     };
+
+    SPIN.update = () => {
+        
+    }
 
 
     SPIN.start = (W, H) => {
