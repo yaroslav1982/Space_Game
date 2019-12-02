@@ -58,6 +58,10 @@ const SPIN = new function () {
         return down_keys[key];
     };
 
+    SPIN.clear_timer = () => {
+        timer = 0;
+    }
+
     SPIN.start = (W, H) => {
         cnv = $('cnv')
         ctx = cnv.getContext('2d');
