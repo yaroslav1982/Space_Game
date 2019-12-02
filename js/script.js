@@ -78,5 +78,7 @@ window.addEventListener('load', function () {
         }
     }
 
-    SPIN.create_node();
+    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#00a7FF', (node) => {
+        
+    });
 });
