@@ -7,7 +7,7 @@ const SPIN = new function () {
 
 
 
-    SpIN.start = (W, H) => {
+    SPIN.start = (W, H) => {
         cnv = $('cnv')
         ctx = cnv.getContext('2d');
         width = W;
