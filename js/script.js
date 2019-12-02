@@ -1,12 +1,12 @@
 const SPIN = new function () {
     let SPIN = this,
-        cnv, ctx, width, height, nodes;
+        cnv, ctx, width, height, nodes = [];
 
     let $ = (id) => {return document.getElementById(id)};
 
     class Nade {
         constructor (x, y) {
-
+            nodes.push(this);
         }
 
         update () {
