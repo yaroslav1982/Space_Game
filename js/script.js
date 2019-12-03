@@ -159,6 +159,11 @@ window.addEventListener('load', function () {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1300 + (20 + 40) * j, 40, 40, '#00b08a', enemy_ai));
         }
     }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1600 + (20 + 40) * j, 40, 40, '#06b000', enemy_ai));
+        }
+    }
 
     let fire = (x, y) => {
         if (SPIN.get_timer() > 15) {
