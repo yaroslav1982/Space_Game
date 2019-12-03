@@ -121,7 +121,7 @@ window.addEventListener('load', function () {
 
     let bullet_ai = (node) => {
         node.y -= 5;
-        if (node.y+node.h < 0)
+        if (node.y + node.h < 0)
             node.destroy();
         for (let i = enemies.length - 1; i >= 0; i--) {
             if (node.intersect(enemies[i])) {
@@ -157,6 +157,6 @@ window.addEventListener('load', function () {
     });
 
     SPIN.set_draw((s) => {
-        s.draw_text(640 / 2 - 36, 457, '#8cff00', 'Score: '+ score);
+        s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score);
     });
 });
