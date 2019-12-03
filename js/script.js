@@ -115,8 +115,8 @@ window.addEventListener('load', function () {
 
     let enemies = [], score = 0;
 
-    let enemy_ai = (node) => {
-        node.y += 0.1;
+    let enemy_ai = (node) => {    
+        node.y += 0.1 * i;
     };
 
     let bullet_ai = (node) => {
