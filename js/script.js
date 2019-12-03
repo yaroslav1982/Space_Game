@@ -157,6 +157,6 @@ window.addEventListener('load', function () {
     });
 
     SPIN.set_draw((s) => {
-        s.draw_text(640 / 2 - 70, 1, '#8cff00', 'Игровой счет: '+ score);
+        s.draw_text(640 / 2 - 33, 1, '#8cff00', 'Score: '+ score);
     });
 });
