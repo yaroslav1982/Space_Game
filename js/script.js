@@ -146,7 +146,17 @@ window.addEventListener('load', function () {
     }
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1300 + (20 + 40) * j, 40, 40, '#00b08a', enemy_ai));
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -700 + (20 + 40) * j, 40, 40, '#00b08a', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1000 + (20 + 40) * j, 40, 40, '#06b000', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1300 + (20 + 40) * j, 40, 40, '#2c8b00', enemy_ai));
         }
     }
     for (let j = 0; j < 5; j++) {
@@ -156,22 +166,17 @@ window.addEventListener('load', function () {
     }
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1600 + (20 + 40) * j, 40, 40, '#2c8b00', enemy_ai));
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1900 + (20 + 40) * j, 40, 40, '#4c00b0', enemy_ai));
         }
     }
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1900 + (20 + 40) * j, 40, 40, '#06b000', enemy_ai));
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -2200 + (20 + 40) * j, 40, 40, '#b00093', enemy_ai));
         }
     }
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -700 + (20 + 40) * j, 40, 40, '#4c00b0', enemy_ai));
-        }
-    }
-    for (let j = 0; j < 5; j++) {
-        for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1000 + (20 + 40) * j, 40, 40, '#b00093', enemy_ai));
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -2500 + (20 + 40) * j, 40, 40, '#48acff', enemy_ai));
         }
     }
 
