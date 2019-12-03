@@ -44,7 +44,7 @@ const SPIN = new function () {
             this.x += x;
             this.y += y;
         }
-        
+
         intersect (node) {
             return !(this.x+this.w < node.x || this.y+this.h < node.y || this.x > node.x+node.w || this.y > node.y+node.h);
         }
@@ -98,7 +98,7 @@ const SPIN = new function () {
         cnv.width = width;
         cnv.height = height;
         ctx.textBaseline = 'top';
-        ctx.font = '20px Troika';
+        ctx.font = '20px Arial, sans-serif';
 
         window.addEventListener('keydown', (e) => {
             down_keys[e.code] = true;
@@ -157,6 +157,6 @@ window.addEventListener('load', function () {
     });
 
     SPIN.set_draw((s) => {
-        s.draw_text(640/2-60, 5, '#8cff00', 'Игровой счет: '+score);
+        s.draw_text(640 / 2 - 70, 1, '#8cff00', 'Игровой счет: '+ score);
     });
 });
