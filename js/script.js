@@ -199,7 +199,7 @@ window.addEventListener('load', function () {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -3700 + (20 + 40) * j, 40, 40, '#5b00b0', enemy_ai));
         }
     }
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < 6; j++) {
         for (let i = 0; i < 10; i++) {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -4000 + (20 + 40) * j, 40, 40, '#700000', enemy_ai));
         }
@@ -209,9 +209,14 @@ window.addEventListener('load', function () {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -4300 + (20 + 40) * j, 40, 40, '#ffd51c', enemy_ai));
         }
     }
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < 6; j++) {
         for (let i = 0; i < 10; i++) {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -4600 + (20 + 40) * j, 40, 40, '#cc0000', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -4900 + (20 + 40) * j, 40, 40, '#00701c', enemy_ai));
         }
     }
 
