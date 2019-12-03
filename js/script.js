@@ -116,7 +116,7 @@ window.addEventListener('load', function () {
     let enemies = [], score = 0;
 
     let enemy_ai = (node) => {    
-        node.y += 0.1 * i;
+        node.y += 0.3;
     };
 
     let bullet_ai = (node) => {
@@ -228,6 +228,9 @@ window.addEventListener('load', function () {
         for (let i = 0; i < 10; i++) {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -5500 + (20 + 40) * j, 40, 40, '#fde400', enemy_ai));
         }
+    }
+    for (let i = 0; i <= 19; i++) {
+        enemies.push(SPIN.create_node(30 + (20 + 40) * i, -5800 + (20 + 40) * j, 40, 40, '#fde400', enemy_ai));
     }
 
     let fire = (x, y) => {
