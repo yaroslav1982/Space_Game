@@ -46,7 +46,7 @@ const SPIN = new function () {
         }
 
         intersect (node) {
-            return !(this.x+this.w < node.x || this.y+this.h < node.y || this.x > node.x+node.w || this.y > node.y+node.h);
+            return !(this.x + this.w < node.x || this.y + this.h < node.y || this.x > node.x + node.w || this.y > node.y + node.h);
         }
     }
 
@@ -60,7 +60,7 @@ const SPIN = new function () {
 
     SPIN.update = () => {
         ctx.clearRect(0, 0, width, height);
-        for (let i = nodes.length-1; i >= 0; i--) {
+        for (let i = nodes.length - 1; i >= 0; i--) {
             if (for_destroy[nodes[i].id]) {
                 nodes.splice(i, 1);
                 continue;
@@ -147,13 +147,13 @@ window.addEventListener('load', function () {
         }
     };
 
-    SPIN.create_node(640/2-25, 480-50-30, 50, 50, '#64c858', (node) => {
+    SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
         if (SPIN.key('KeyA'))
             node.x -= 1;
         if (SPIN.key('KeyD'))
             node.x += 1;
         if (SPIN.key('Space'))
-            fire(node.x+25-5, node.y);
+            fire(node.x + 25 - 5, node.y);
     });
 
     SPIN.set_draw((s) => {
