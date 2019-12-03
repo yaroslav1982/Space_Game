@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    display: inline-block;
 }
 
 body {
@@ -12,8 +11,8 @@ body {
 }
 
 #game {
-    padding: 5px;
-    background: #2d2d2d;
+    padding: 10px;
+    background: #2b2b2b;
     color: white;
     display: inline-block;
     border-radius: 20px;
@@ -30,5 +29,5 @@ body {
 #cnv {
     border-radius: 15px;
     background: #1a272f;
-    box-shadow: 0 0 5px #00a7FF;
+    box-shadow: 0 0 5px #00A7FF;
 }
