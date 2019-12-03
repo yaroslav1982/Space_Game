@@ -229,8 +229,10 @@ window.addEventListener('load', function () {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -5500 + (20 + 40) * j, 40, 40, '#fde400', enemy_ai));
         }
     }
-    for (let i = 0; i <= 19; i++) {
-        enemies.push(SPIN.create_node(30 + (20 + 40) * i, -5800 + (20 + 40) * j, 40, 40, '#fde400', enemy_ai));
+    for (let j = 0; j < 19; j++) {
+        for (let i = 0; i < 1; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -5800 + (20 + 40) * j, 40, 40, '#fde400', enemy_ai));
+        }
     }
 
     let fire = (x, y) => {
