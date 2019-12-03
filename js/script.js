@@ -146,16 +146,6 @@ window.addEventListener('load', function () {
     }
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -700 + (20 + 40) * j, 40, 40, '#4c00b0', enemy_ai));
-        }
-    }
-    for (let j = 0; j < 5; j++) {
-        for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1000 + (20 + 40) * j, 40, 40, '#b00093', enemy_ai));
-        }
-    }
-    for (let j = 0; j < 5; j++) {
-        for (let i = 0; i < 10; i++) {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1300 + (20 + 40) * j, 40, 40, '#00b08a', enemy_ai));
         }
     }
@@ -172,6 +162,16 @@ window.addEventListener('load', function () {
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
             enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1900 + (20 + 40) * j, 40, 40, '#06b000', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -700 + (20 + 40) * j, 40, 40, '#4c00b0', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -1000 + (20 + 40) * j, 40, 40, '#b00093', enemy_ai));
         }
     }
 
