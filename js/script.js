@@ -157,6 +157,6 @@ window.addEventListener('load', function () {
     });
 
     SPIN.set_draw((s) => {
-        s.draw_text(640 / 2 - 33, 1, '#8cff00', 'Score: '+ score);
+        s.draw_text(640 / 2 - 36, 457, '#8cff00', 'Score: '+ score);
     });
 });
