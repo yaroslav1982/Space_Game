@@ -141,7 +141,7 @@ window.addEventListener('load', function () {
     }
 
     let fire = (x, y) => {
-        if (SPIN.get_timer() > 10) {
+        if (SPIN.get_timer() > 15) {
             SPIN.create_node(x, y, 10, 20, '#14ff00', bullet_ai);
             SPIN.clear_timer();
         }
