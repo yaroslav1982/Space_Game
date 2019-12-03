@@ -134,9 +134,14 @@ window.addEventListener('load', function () {
         }
     };
 
-    for (let j = 0; j < 3; j++) {
+    for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 10; i++) {
-            enemies.push(SPIN.create_node(30 + (20 + 40) * i, 20 + (20 + 40) * j, 40, 40, '#ff6d5a', enemy_ai));
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -100 + (20 + 40) * j, 40, 40, '#004e8d', enemy_ai));
+        }
+    }
+    for (let j = 0; j < 5; j++) {
+        for (let i = 0; i < 10; i++) {
+            enemies.push(SPIN.create_node(30 + (20 + 40) * i, -400 + (20 + 40) * j, 40, 40, '#417fa7', enemy_ai));
         }
     }
 
