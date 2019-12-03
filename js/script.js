@@ -253,3 +253,5 @@ window.addEventListener('load', function () {
         s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score);
     });
 });
+
+//что бы пройти надо набрать 999 очков. Удачи!
