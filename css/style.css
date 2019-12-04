@@ -31,3 +31,9 @@ body {
     background: #1a272f;
     box-shadow: 0 0 5px #00A7FF;
 }
+
+#audio {
+    background: #2d2d2d;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #00A7FF;
+}
