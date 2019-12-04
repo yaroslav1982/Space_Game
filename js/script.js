@@ -244,15 +244,18 @@ window.addEventListener('load', function () {
 
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
         if (SPIN.key('KeyA'))
-            node.x -= 1;
+            node.x -= 1,6;
         if (SPIN.key('KeyD'))
-            node.x += 1;
+            node.x += 1,6;
         if (SPIN.key('Space'))
             fire(node.x + 25 - 5, node.y);
     });
 
     SPIN.set_draw((s) => {
-        s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score);
+        s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score * 100);
+        if (score = 999) {
+            s.draw_text(640 / 2 - 36, 200, '#8cff09', 'YOU WIN')
+        }
     });
 });
 
