@@ -15,6 +15,11 @@ const SPIN = new function () {
         ctx.fillText(text, x, y);
     };
 
+    let victory = (x, y, clr, text) => {
+        ctx.fillStyle = clr;
+        ctx.fillText(text, x, y);
+    };
+
     class Node {
         constructor (x, y, w, h, clr, upd) {
             this.id = node_count++;
@@ -55,6 +60,10 @@ const SPIN = new function () {
     };
 
     SPIN.draw_text = (x, y, clr, _text) => {
+        text(x, y, clr, _text);
+    };
+
+    SPIN.painting_text = (x, y, clr, _text) => {
         text(x, y, clr, _text);
     };
 
@@ -253,6 +262,10 @@ window.addEventListener('load', function () {
 
     SPIN.set_draw((s) => {
         s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score);
+    });
+
+    SPIN.painting_text((s) => {
+        s.draw_text(640 / 2 - 36, 45, '#8cff09', 'Win: '+ score);
     });
 });
 
