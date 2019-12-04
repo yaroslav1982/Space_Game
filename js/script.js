@@ -15,11 +15,6 @@ const SPIN = new function () {
         ctx.fillText(text, x, y);
     };
 
-    let victory = (x, y, clr, text) => {
-        ctx.fillStyle = clr;
-        ctx.fillText(text, x, y);
-    };
-
     class Node {
         constructor (x, y, w, h, clr, upd) {
             this.id = node_count++;
@@ -60,10 +55,6 @@ const SPIN = new function () {
     };
 
     SPIN.draw_text = (x, y, clr, _text) => {
-        text(x, y, clr, _text);
-    };
-
-    SPIN.painting_text = (x, y, clr, _text) => {
         text(x, y, clr, _text);
     };
 
@@ -253,19 +244,15 @@ window.addEventListener('load', function () {
 
     SPIN.create_node(640 / 2 - 25, 480 - 50 - 30, 50, 50, '#64c858', (node) => {
         if (SPIN.key('KeyA'))
-            node.x -= 1,3;
+            node.x -= 1,6;
         if (SPIN.key('KeyD'))
-            node.x += 1,3;
+            node.x += 1,6;
         if (SPIN.key('Space'))
             fire(node.x + 25 - 5, node.y);
     });
 
     SPIN.set_draw((s) => {
         s.draw_text(640 / 2 - 36, 457, '#8cff09', 'Score: '+ score);
-    });
-
-    SPIN.painting_text((s) => {
-        s.draw_text(640 / 2 - 36, 45, '#8cff09', 'Win: '+ score);
     });
 });
 
